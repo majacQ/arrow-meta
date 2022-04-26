@@ -34,11 +34,11 @@ jobs:
       analysis-version: ${{ steps.get-analysis-version.outputs.analysis-version }}
 
     steps:
-      - uses: actions/checkout@v3.0.0
+      - uses: actions/checkout@v3.0.2
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-java@v3.0.0
+      - uses: actions/setup-java@v3.2.0
         with:
           distribution: 'adopt'
           java-version: '15'
@@ -79,9 +79,9 @@ jobs:
     runs-on: macos-11
 
     steps:
-      - uses: actions/checkout@v3.0.0
+      - uses: actions/checkout@v3.0.2
 
-      - uses: actions/setup-java@v3.0.0
+      - uses: actions/setup-java@v3.2.0
         with:
           distribution: 'adopt'
           java-version: '15'
@@ -109,9 +109,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3.0.0
+      - uses: actions/checkout@v3.0.2
 
-      - uses: actions/setup-java@v3.0.0
+      - uses: actions/setup-java@v3.2.0
         with:
           distribution: 'adopt'
           java-version: '15'
